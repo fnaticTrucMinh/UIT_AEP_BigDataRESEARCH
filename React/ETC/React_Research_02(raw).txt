@@ -1,0 +1,61 @@
+__ Definition:
+React is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time. Lots of people use React as the V in MVC. React abstracts away the DOM from you, offering a simpler programming model and better performance. React can also render on the server using Node, and it can power native apps using React Native. React implements one-way reactive data flow, which reduces the boilerplate and is easier to reason about than traditional data binding.
+
+React’s official definition states that it’s a JavaScript library for building User Interfaces. It’s important to understand the two different parts of this definition:
+
+    React is a JavaScript library. It’s not a framework. It’s not a complete solution and we’ll often need to use more libraries with React to form any solution. React does not assume anything about the other parts in any full solution. It focuses on just one thing, and on doing that thing very well.
+    The thing that React does really well is the second part of the definition: building User Interfaces. A User Interface is anything we put in front of users to have them interact with a machine. User Interfaces are everywhere, from the simple buttons on a microwave to the dashboard of a space shuttle. If the device we’re trying to interface can understand JavaScript, we can use React to describe a User Interface for it.
+
+
+
+__ Features:
+
+    JSX − JSX is JavaScript syntax extension. It isn't necessary to use JSX in React development, but it is recommended.
+
+    Components − React is all about components. You need to think of everything as a component. This will help you maintain the code when working on larger scale projects.
+
+    Unidirectional data flow and Flux − React implements one-way data flow which makes it easy to reason about your app. Flux is a pattern that helps keeping your data unidirectional.
+
+__ Adv vs DAdv:
+     # Adv
+
+    Uses virtual DOM which is a JavaScript object. This will improve apps performance, since JavaScript virtual DOM is faster than the regular DOM.
+
+    Can be used on client and server side as well as with other frameworks.
+
+    Component and data patterns improve readability, which helps to maintain larger apps.
+
+     # DAdv:
+
+    Covers only the view layer of the app, hence you still need to choose other technologies to get a complete tooling set for development.
+
+    Uses inline templating and JSX, which might seem awkward to some developers.
+
+__ JSX:
+
+    React uses a special syntax called JSX, which allows you to mix HTML with JavaScript.
+    React turns those bits of HTML into functions with a special JSXTransformer.
+
+__ Component:
+
+    React gives you the ability to create your own components that you can later reuse, combine, and nest to your heart’s content.
+    In React, we describe User Interfaces using components. You can think of components as simple functions (in any programming language).
+
+__ React is extremely efficient
+
+React creates its own virtual DOM where your components actually live. This approach gives you enormous flexibility and amazing gains in performance because React calculates what changes need to be made in the DOM beforehand and updates the DOM tree accordingly. This way, React avoids costly DOM operations and makes updates in a very efficient manner.
+
+In a browser, we need to regenerate the HTML views in the Document Object Model (DOM). With React, we do not need to worry about how to reflect these changes, or even manage when to take changes to the browser; React will simply react to the state changes and automatically update the DOM when needed.
+
+__ Here are a few reasons why React has become so popular so quickly:
+
+    Working with the DOM API is hard. React basically gives developers the ability to work with a virtual browser that is more friendly than the real browser. React’s virtual browser acts like an agent between the developer and the real browser.
+    React enables developers to declaratively describe their User Interfaces and model the state of those interfaces. This means instead of coming up with steps to describe transactions on interfaces, developers just describe the interfaces in terms of a final state (like a function). When transactions happen to that state, React takes care of updating the User Interfaces based on that.
+    React is just JavaScript, there is a very small API to learn, just a few functions and how to use them. After that, your JavaScript skills are what make you a better React developer. There are no barriers to entry. A JavaScript developer can become a productive React developer in a few hours.
+
+Reactive updates are dead simple.
+In a traditional JavaScript application, you need to look at what data changed and imperatively make changes to the DOM to keep it up-to-date.
+
+React takes a different approach.
+
+When your component is first initialized, the render method is called, generating a lightweight representation of your view. From that representation, a string of markup is produced, and injected into the document. When your data changes, the render method is called again. In order to perform updates as efficiently as possible, we diff the return value from the previous call to render with the new one, and generate a minimal set of changes to be applied to the DOM.
