@@ -1,0 +1,15 @@
+https://www.ibm.com/analytics/hadoop/hbase
+
+https://www.youtube.com/watch?v=IumVWII3fRQ
+
+https://www.youtube.com/watch?v=9CREwiemvT0
+
+http://javaarm.com/file/apache/Hadoop/books/Hadoop-The.Definitive.Guide_4.edition_a_Tom.White_April-2015.pdf
+
+https://en.wikipedia.org/wiki/Apache_HBase
+
+https://mapr.com/blog/in-depth-look-hbase-architecture/
+
+https://viblo.asia/p/hbase-overview-architecture-va-data-flow-63vKj6J6K2R
+
+the log-structured merge-tree (or LSM tree) is a data structure with performance characteristics that make it attractive for providing indexed access to files with high insert volume, such as transactional log data. LSM trees, like other search trees, maintain key-value pairs. LSM trees maintain data in two or more separate structures, each of which is optimized for its respective underlying storage medium; data is synchronized between the two structures efficiently, in batches.
