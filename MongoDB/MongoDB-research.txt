@@ -1,0 +1,42 @@
+* Why mongoDB 
+	- Offering massive increases in productivity by allowing us to store data in a way that is consistent with how we think and create applications
+	- Giving us the confidence and freedom to concentrate on differentiating code without having to be concerned about challenges associated with data locality, reliability and scalability
+	- Running consistently all the way from local development environments to the largest mainframe deployments
+	- Database can be deployed on-premises, in a hybrid cloud, or in any of the public clouds
+* Introduction 
+	1/ It is an 'open-source' "DOCUMENT DATABASE" that provides :
+			+ High performance
+			+ High availability
+			+ Automatic scaling.
+		1.1 Document database : 
+			+ A record in MongoDB is a document
+			+ A data structure composed of field and value pairs
+			+ Similar to JSON objects
+			*DAdv : 
+				__Documents (i.e. objects) correspond to native data types in many programming languages.
+				__Embedded documents and arrays reduce need for expensive joins.
+				__Dynamic schema supports fluent polymorphism.
+		1.2 Key features
+			+ High performance
+				__Support for embedded data models reduces I/O activity on database system.
+				__Indexes support faster queries and can include keys from embedded documents and arrays.
+			+ Rich Query Language
+				.Read and write operations (CRUD) as well as:
+				__Data Aggregation
+				__Text Search and Geospatial Queries.
+			+ High Availability
+				.MongoDB’s replication facility, called replica set, provides:
+				__automatic failover 
+				__data redundancy
+				.A replica set is a group of MongoDB servers that maintain the same data set, providing redundancy and increasing data availability.
+			+ Horizontal Scalability (part of its core functionality)
+				__Sharding distributes data across a cluster of machines.
+			+ Support for Multiple Storage Engines
+				__WiredTiger Storage Engine (including support for Encryption at Rest)
+				__In-Memory Storage Engine
+				__MMAPv1 Storage Engine
+				__Providing pluggable storage engine API that allows third parties to develop storage engines for MongoDB
+*Installation
+		_Supported many platforms
+		_Supported multi OS
+		_

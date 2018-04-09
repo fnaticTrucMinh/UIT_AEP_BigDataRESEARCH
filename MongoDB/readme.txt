@@ -1,1 +1,0 @@
-start to learn Mongo :3
